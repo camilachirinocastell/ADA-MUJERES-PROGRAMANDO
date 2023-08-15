@@ -1,14 +1,54 @@
-<html>
-    <body>
-        <main> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/?size=512&id=be7UMbtuCsuu&format=png" type="image/x-icon">
+    <title>Rick and Morty page</title>
+    <img src="https://thumbs.gfycat.com/DirtyConstantHeron.webp">
+    <img src="https://thumbs.gfycat.com/GoodnaturedBonyBoto.webp">
+    <img src="https://i.pinimg.com/originals/43/a6/fd/43a6fd7fd122188e81ee868f5ea5d875.gif">
+    <style type="text/css">
+    </style><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main> 
             <!---para anidar dejar dos espacios a la derecha-->
-            <h1>RICK AND MORTY</h1>
-            <h2>listado de personajes de la serie Rick and Morty</h2>
+            <h1>RICK AND MORTY</h1></span>
+            <div class="container"> <!---filtrar por la propiedad gender-->
+                <button class="btn" id="todxs ">Todxs</button>
+                <button class="btn" id="mujer">Mujeres</button>
+                <button class="btn" id="hombre">Hombres</button>
+                <button class="btn" id="generoNoBinario">No Binario</button>
+                <button class="btn" id="desconocido">Sin informacion</button>
+            </div>
+            <div id= "cajaDePersonajes"></div> <!---contenedor para llamar a todos los personajes-->
+              <!---<div>
+                <img src="" alt="">
+                <h2>Nombre: </h2>
+                <p>Género: </p>
+                <p>Especie</p>
+              </div> -->
+            <div>
+                <button id="botonPaginaInicio"><<</button>
+                <button id="botonAnterior">anterior</button>
+                <button id="botonSiguiente">siguiente</button>
+                <button id="botonPaginaFinal">>></button>
+            </div>
+            <h2> Listado de <span style = "font-weight:600" >personajes de la serie</span> Rick and Morty</h2>
             <!---agragar algo comentado: 
                 ○ Respeta la consigna ○ Respeta el diseño dado ○ Respeta el funcionamiento ○ Responsive funciona correctamente-->
             <p>INFORMACIÓN DISPONIBLE PARA CADA PERSONAJE: ○ <a href="url">Nombre</a> ○ Género ○ Especies ○ Estado ○ Origen ○ Locación</p>
-            <a href="!--- link a otra pagina o lugar---">PRESIONE AQUÍ PARA SABER MÁS</a>
-            <img src="!--- url de la imagen --" alt="descripcion de imagen"><alt>>
-        </main>
-    </body>
+            <a href="https://thumbs.gfycat.com/AlarmedInsistentGrayreefshark-size_restricted.gif">PRESIONE AQUÍ PARA SABER MÁS</a>
+            <a href="https://cdn.dribbble.com/users/2350550/screenshots/10856228/ezgif.com-optimize.gif">O AQUÍ..</a>
+            <img src="!--- url de la imagen --" alt="Dan Harmon anuncia duchándose que 'Rick y Morty' ha sido renovada por 70 episodios"><alt>>
+              <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCACXARMDASIAAhEBAxEB/8QAGwABAAEFAQAAAAAAAAAAAAAAAAQBAgMFBgf/xABHEAABAwICBgYHAwgJBQAAAAABAAIDBBEFIQYSMUFRYRMicZGhwRQjMkKBsdEzYnIkUlNjk8LS8BUWNEOCg6Ky4TVUc3Tx/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAIxEBAQACAgICAgMBAAAAAAAAAAECESExAxIEUSJBExQyQv/aAAwDAQACEQMRAD8A4xEQbc0BFnrKb0WYM1tdpaHNdxCwKS7m4tmrqiIiqCIiAiIgIskEEtRKI4I3SPOxrRcrpsN0Mmls/EJehb+jZm7v2DxQcqtjSYFiVZYw0kgafeeNUeO1egUODUGHgGmpmB4993Wd3lTka04mn0Iqni9RVRRcmNL/AKLYR6E0QHramocfu6rfIrpkQ00TNEcKbtjkf2yHyWT+qmEf9s79o76rcoi6aJ+iGFOGUcrOyQ+aiyaE0RHqqmoafvarvILp0RNOJn0IqWj8nq4pPxtLPqtTVaPYpS3L6R72j3o+v8s16YiGnkBBaSHAgjaCi9WrMOo65tqqnjlytcjMdh2hc5iGhUbrvw+csP6OXMd+0eKJpxiKXX4ZV4dJq1cDmX2O2tPYVERBERAREQEREBERAREQFNFHBIPU1jL8HjVUJFLLeqssncbStp5Bh0TpLF8J1bg3BadnkoDqd7adk9wWPJGW0HmskFHJURXjkjvf2C7PuUyCkn9FnppYyLjXYdoupjjZHX19rvTVIqhpcbAE9iotOIiKrGOke1jGlznGwAFySgot/gui1RiAbNUk09Ocxl1njkN3aVutH9FmUobU4g0Pn2tjObWdvErpkWRGoMOpcOi6OkhbGN52l3ad6krHUVEdLC6WZ2q0ePJcxWY5U1DiIT0Me4N296O/j8WWfTq0XCOmlcbukeTxLir2VlTGepUSt7HlNO39W/buEWhw3HtZwirbAnISDLvW+R588MsLqiIiMCIiAiIgIhIG0qmsOKCksbJo3Rysa9jsi1wuCuVxfQ5jw6XCzqO2mFxyPYd3x8F1iIPI54ZaeV0U7HRyNNi1wsQrF6fi+DU2LQ6szdWUDqStHWb9RyXneJYbUYXVGCpbY7WuGxw4hGbEREREEREBERAREQEREBZoqioadWKV45ArCgJBuDY8kWXTJGXRShzgRxuqTM1JCN25VFRIPeuOapJIZCCQBYWyRq2a0sALiA0Ek5ADeu/0a0ebh0bamqaHVbhkD/djgOfP+TrtDsFDrYlUtuAbQtPHe76f/F2KJIISACSbAbSig41KYsLmINi4Bo+Jt8kbxntZHO4riDq6pJBIibkweagoBfYlje1jfgq+rjJjNRKw2l9LrGRuF2DrO7FsanANrqaT/C/6qbhNF6HTXeLSvzdy5KcRrNI4hcrnd8PJn5r7fi5CSjqI2B7oX6pFw4C4W80drXSsdSyG5jF2HlwU+lP5LD+AfJXQANrH2AGuwE5cCfqtTPfDOfl98dWJSIi08oiIgK17rZBXLESc+BRYFCbqiucLEZbgigdY5bOCyLEL7lezYiVcoeKYZBilI6CcZ7WPtmw8VMREeUV1HNh9XJTVDbPYfgRuIUdegaXYSK6gNTE319OL5bXM3jz7+K8/RmiIiIIiICIiAiIgIiICmYTQOxLEIaZtwHG7iNzRtKhrs9BaINhnrXDrPPRsPIZnxt3IR1UUbIYmRxtDWMAa0DcArkRGxaDSWqFo6Vu323eXmt+uOxkOGKT698yLX4WySPR8fGXNTCZ44K1rpbauy53LpGR00z+mjbE9wPtgA59q49dHglY2WnEDj6xmy+8LGc/bt58P+omzmKRroJRrNeNVw5FZGMZDE1jBqsY2wHABDExz9YjNWziazehI25g7T2Lm8vDDHBHPFGZYyehkL473BFibHuKzUjzLUPeRbVaB3k/RUiMkcTnVLxYZ34Dms1IxwY6R41XSHWsdw3D+eK1j2Xqs6Ii6uYiIgLEQbnksqtc2+Y2osY1UuJFjmhyQ5IoM9ivZ7KtDbnksiJRERECLix2Ly7GqL+j8VqKcCzGuuz8JzC9RXFad04bVUtQB7bCw/A3/AHkSuVRERkREQEREBERAREQF6fo/AKbBKNgFrxh57XZ+a8wXrkLQyGNo2NaAO5Fi9ERGhQ8Qw2HEGt1yWvbsc35KYiLMrjdxzlTo7JHGXU8vSke6W2J7Fpx0kUtgHMkaewgru1GmrY43FjAZZBta3d2nYEt1OXpw+Rl1Ztp8LxGqqZehIY4hty45KfV1FRTwOkbCx2rtAeT5K3Xm9IdOY4tZzQ2wJFh270f0sw1ZXAMO1rN/aV5svJhvhmzeW5GvmhxevDSYjHGcwLhtvhtXRsDgxoebutmRxWqFPELWba3A2VwY5vsTTNP/AJCfA3CT5GP0Zz24bRFr2VU8R9YBMzeQLOHkfBTopWTRh8bg5p3rtjnMunG42LkRFtkREQCAdqao4IiAiIgIiIC5nTpgOFwP3icDvafoumXOac/9Hh/9hv8AtciVwaIiMiIiAiIgIiICIiAvXYiHRMcNhaCvIl6jgk4qMGo5Ab+qaCeYyPiEWJyIiNCIqPOqxzhuF0ECoqHzvdFE4siabOcNrjvA4DmrGNaxoawBoG4KynGrTxjadUXPErIvneTO5V6ZNcQREXMEREBWhzqaQzRgkH7Rg94cRzVr4nOcXNle08rW7lSKSV8vQdHrTWJyNgRxXTD2l3ifptmPbIxr2EFrhcEbwqqJSwVkDHsEURbrEtBlItfd7J33WfVqyfYgA/GT5L6EeeyMiLGI6sg3dCDuyJVRDVe9NCOyIn95VOPteit6Gp/TRfsj/EnQ1P6aL9kf4kOPtcixiKrubyQn/AR5qsDzJCx7gASM7IL0REBctp5KBR0sO90hd3C37y6lcFptVdNizYAerBGAfxHM+FkSudRERkREQEREBERAREQF3Og9X0uHy0rj1oX3A+67/kHvXDLaaOYgMOxaKR5tFJ6uTkDv+BsUWPS0REaEIBBB2FEQamnuIWsd7TOoe0ZKszzHC94Fy1pKy1cfQT9KPs5CA77rtgPx2K3btXzvJj6ZPTLvkGwXN+YRYBrU3VIL4RsIzLeRG8LMx7ZG6zHBw4grFiqoiKIK6nsK+nNszrNv8L+StVYsqymJv9of9rguni/3Ey6rcIiL6LyCItfU4i9k7o6eON+oQHF8mqC780cSjWONy6bBFipqhlVA2WO4B2g7Qd4KyolmuKKFSf2aPsU1QqMatM1vAkeJRZ0zIiIrHUzspaeSeU2ZG0ud2BeU1VQ+rqpaiT25Hlx+K6vTXFhZuGwu4OmI8G+fcuPRmiIiIIiICIiAiIgIiICIiD0DRLFxXUXo0rvyinFs9rm7j5d3Fb9eT0VXNQ1UdRTu1ZGG44HkeS9KwnFIMVpBNCbOGUjCc2Hh/wAo1KnIiIqjmh7S1wBaRYg71r5KWWnPqgZYvzb9Zv1Hj2rYosZYzKarUysaps0b3aodZw2tORHwOao+CN7tYts785pse8LZyRRzC0sbHjg5oKw+gU18oy38Li35FcL8fXVdJ5Ig6kzPYlDhwePMJ0srfbhJ5scD87FTjQQEbJP2rvqoc2G9G1w9bNGf1ji5vwvZw/nNT+C/tZnKtiqoZb6jxkbEHJXRzRmqgayRhd0gyDhdYZqyMUwj9HBAyyb1Gny7NqzUM75qRty31c7ALbbawWsfDJlst4bxERel5Rco6Rmq5szWvkLXtcx7i1zXlxJIFjfdbsXVojp48/T9IGDwzRUhfUZSTP6Qi1rXA8cvFT0RGMr7XYoVICISDtD3j/UVNUKlOtG8/rZB/rcizpmWqx/GY8IpCRZ1TILRs8zyCtxzH6fCYywES1RHVjB2c3cAvPayrmrql9RUPL5HnM8OQ5IWsckj5ZHSSOLnvJLnHaSqshe9t2i47VYs0BvrRnY4ZdqGMluqtMEg2tKxrNDHLLL0UZOtnleyynDKsf3V+xwRfW3qIiK6WJ8L9SRpa7gVajAiIgIiICIiAiIgKVh2I1GGVLZ6Z9iPaadjhwKiog9OwfGqbFobxHUmA68Tjm36jmtivI4ZpIJWywvdHI03DmmxC63CdMhZsWKM/wA5g+Y+ncjUrr0WKmqYKuISU0rJWHe03WVFEREBERBgnpWTEuHUktbWA28iN47VHlldTxtZLCGjpWHXjb1T1gSbbv5zU9Eal+1prqce8434RuPkhroQRlNnwgf9FSWaKBmvNIyNvF7gAtdPpHhNObOrGOP6sF/yRnUbI1sd7Bkx/wAp30T0xt7CGY89S3zXOTaa0DbiKCeQjeQAD4qHJpy836KgaOBdLfyRPxdf6Wb2FNOefVHzKoKt97eiT9t2fxLhZdM8SfcMZTx8CGknxK11Rj+KVItJWygcGdT5WQ3Pp6DWY5T0AJq29FwDntLj8ASVyVdpbMYnwUDeiDnvcZTm6znE5DdtXNEkkkm5O0lETar3ue8ve4uc43JJuSVRERBASCCNoREGSKZ0U7ZQbuab9qk17TFOJYXERyjXaQbdqhK50r3MaxziWt9kcEamXGkt+HVrzrOYXk7y8E/NR5qWaAXljc0XtcqW9xqMOZK0kSQdV1jtbu/ntUJ80j26r5HuaM7FxIXPG5XtrKYxYiIujmIiICIiAiIgIiICIiDJBUTU0nSU8r4n/nMcQVvKTTDEoABN0dQ377bHvCIg2cOnEJ+3ont/A8O+YCkDTXDrZwVV/wALf4kRF2o7TbD/AHaepPa1o81Hl05YPsaFzub5LeSIhtBn00xB9xFFBEN2RcR4+S1tRj+KVH2lbKBwYdT5WRERr3vfI4ukc5zjtLjcq1EQEREBERAREQEREBERAREQXslfG17WOIDxZw4hWIiAiIg//9k=">
+              <H3> Introducción a Frontend</H3>
+              <img src="https://thumbs.gfycat.com/ActualGratefulDaddylonglegs.webp">
+              <img src="https://thumbs.gfycat.com/EthicalIllfatedBarracuda.webp">
+              <img src="https://thumbs.gfycat.com/CarefreePresentBaleenwhale.webp">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, rerum neque amet blanditiis hic commodi dolorum explicabo odio maiores sunt culpa natus, totam expedita, earum distinctio tempore molestiae veniam harum.</p>
+        </main> 
+        <script src="script.js"></script> 
+</body>
 </html>
