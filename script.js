@@ -1,6 +1,12 @@
 //ELEMENTOS DEL HTML
 let $cajaDePersonajes = document.getElementById('cajaDePersonajes');
 
+//AUDIO
+const audioElement = document.getElementById('rickAndMortyAudio');
+window.onload = function() {
+  audioElement.play();
+};
+
 //VARIABLES
 let todosPersonajes = [];
 let pagina = 1; 
@@ -18,6 +24,7 @@ function mostrarPersonajes (array) {
   }
 
 }
+
 //FETCH
 function funcionFetchPaginado (numerodepagina){
   fetch (`https://rickandmortyapi.com/api/character/?page=${numerodepagina}`)
@@ -42,8 +49,10 @@ let $desconocido = document.getElementById('desconocido');
 //2: Hacer la función (usar .filter)
 
 //function filtrarTodosPersonajes (){
-//  let resultado1 = 
-//  mostrarPersonajes (resultado1);
+  
+//  let resultado1 = mostrarPersonajes()
+//  mostrarPersonajes(resultado1);
+//  console.log(resultado1);
 //}
 //llamar array y mostrarlo
 function filtrarMujeres (){

@@ -1,23 +1,92 @@
 *{
-   color: white; 
+  margin:0 ;
+  padding:0 ;
+  text-align: center;
+   color: black; 
 }
-body {
-    background-color: black; /* Cambia este valor al color que desees */
+
+h1{
+  font-size: 3rem;
+  display: flex;
+  background-color: red;
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid green;
+} 
+@media (min-width:500px){
+    h1 {
+      font-size: 8rem;
+      background-color: blueviolet;
+    }
   }
-  
+
+ /*imagenes gif*/ 
+  .contenedor-imagen {
+    display: flex;
+    gap: 10px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 100%; /* La imagen no se desbordará del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
+body {
+    background-color: black;
+}
+@media (min-width:600px){
+  body{
+    background-color: rgb(47, 47, 70);
+  }
+}
+
 span{
     color: greenyellow;
+  background-color: aliceblue;
+}
+/*AUDIO*/
+audio {
+  margin-top: 20px;
+}
+
+.verMas{
+  background-color: aqua;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+footer{
+  background-color: aliceblue;
+}
+/*personajes uno al lado del otro */
+#cajaDePersonajes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres elementos por fila */
+  grid-gap: 20px; /* Espacio entre los elementos */
+}
+
+#cajaDePersonajes .personaje {
+  width: 100%;
+  padding: 10px;
+  background-color: #f2f2f2;
 }
 
 
-/*Botones(encontre este diseño en uiverse)*/
 
+/*cajas*/
+/*.container {
+  flex-direction: row;
+}
+.btn {
+  display: flex;
+  gap: 10px;
+  
+}*/
+/*Botones(encontre este diseño en uiverse)*/
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 200px;
+    justify-content: center;/*justify-content: space-around;*/
+    width: 1000px;
   }
   
   .container .btn {
